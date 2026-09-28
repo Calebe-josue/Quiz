@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "pergunta": "Qual é a capital do Brasil?",
+        "opcoes": [
+            "São Paulo",
+            "Brasília",
+            "Rio de Janeiro",
+            "Salvador"
+        ],
+        "resposta": "Brasília",
+        "explicacao": "Brasília é a capital federal do Brasil desde 1960."
+    },
+    {
+        "id": 2,
+        "pergunta": "Qual linguagem é utilizada pelo Django?",
+        "opcoes": [
+            "Java",
+            "Python",
+            "C++",
+            "PHP"
+        ],
+        "resposta": "Python",
+        "explicacao": "Django é um framework web escrito em Python."
+    },
+    {
+        "id": 3,
+        "pergunta": "Qual estrutura de dados armazena valores em pares chave e valor em Python?",
+        "opcoes": [
+            "Lista",
+            "Tupla",
+            "Dicionário",
+            "Conjunto"
+        ],
+        "resposta": "Dicionário",
+        "explicacao": "O dicionário utiliza pares de chave e valor."
+    },
+    {
+        "id":4,
+        "pergunta": "No Python, podemos realizar operações matemáticas utilizando operadores específicos. Qual alternativa apresenta corretamente os operadores utilizados para soma, subtração, multiplicação e divisão, respectivamente?",
+        "opcoes": [
+            "+, -, *, /",  
+            "+, /, x, -", 
+            "=, -, *, //", 
+            "+, --, x, ÷"
+        ],
+        "resposta": "+, -, *, /",
+        "explicacao":"No Python, os operadores matemáticos básicos são: + → soma, - → subtração, * → multiplicação, / → divisão" 
+    }
+]
