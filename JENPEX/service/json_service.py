@@ -5,7 +5,7 @@ from models.pergunta import Pergunta
 
 
 class JsonService:
-
+    
     @staticmethod
     def carregar_perguntas(caminho: str) -> list[Pergunta]:
         caminho_arquivo = Path(caminho)

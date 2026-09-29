@@ -2,7 +2,6 @@ from models.pergunta import Pergunta
 
 
 class QuizService:
-
     def __init__(self, perguntas: list[Pergunta]):
         self.perguntas = perguntas
         self.indice_atual = 0
@@ -24,19 +23,11 @@ class QuizService:
             self.indice_atual += 1
 
     def calcular_resultado(self) -> dict:
-
         resultado = []
-
         acertos = 0
 
-        for pergunta, resposta_usuario in zip(
-            self.perguntas,
-            self.respostas_usuario
-        ):
-
-            correta = pergunta.verificar_resposta(
-                resposta_usuario
-            )
+        for pergunta, resposta_usuario in zip(self.perguntas, self.respostas_usuario):
+            correta = pergunta.verificar_resposta(resposta_usuario)
 
             if correta:
                 acertos += 1
@@ -52,11 +43,7 @@ class QuizService:
 
         total = len(self.perguntas)
 
-        percentual = (
-            acertos / total * 100
-            if total > 0
-            else 0
-        )
+        percentual = (acertos / total * 100 if total > 0 else 0)
 
         return {
             "acertos": acertos,

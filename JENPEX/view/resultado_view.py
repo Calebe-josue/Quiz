@@ -2,7 +2,7 @@ import customtkinter as ctk
 
 
 class ResultadoView(ctk.CTkToplevel):
-    def __init__(self, master, resultado):
+    def __init__(self, master, resultado: dict):
         super().__init__(master)
 
         self.resultado = resultado
@@ -18,7 +18,6 @@ class ResultadoView(ctk.CTkToplevel):
         self.criar_interface()
 
     def criar_interface(self):
-
         self.grid_columnconfigure(0, weight=1)
         self.grid_rowconfigure(2, weight=1)
 
@@ -52,9 +51,7 @@ class ResultadoView(ctk.CTkToplevel):
             pady=10
         )
 
-        scroll = ctk.CTkScrollableFrame(
-            self
-        )
+        scroll = ctk.CTkScrollableFrame(self)
 
         scroll.grid(
             row=2,
@@ -84,17 +81,8 @@ class ResultadoView(ctk.CTkToplevel):
             pady=20
         )
 
-    def criar_questao(
-        self,
-        parent,
-        questao
-    ):
-
-        status = (
-            "✓ CORRETA"
-            if questao["correta"]
-            else "✗ INCORRETA",
-        )
+    def criar_questao(self, parent, questao):
+        status = ("✓ CORRETA" if questao["correta"] else "✗ INCORRETA" )
 
         frame = ctk.CTkFrame(
             parent
@@ -112,7 +100,7 @@ class ResultadoView(ctk.CTkToplevel):
                 f"{questao['id']}. "
                 f"{questao['pergunta']}"
             ),
-            font=("Arial", 20, "bold"),
+            font=("Arial", 25, "bold"),
             wraplength=650,
             justify="left"
         )
@@ -144,7 +132,7 @@ class ResultadoView(ctk.CTkToplevel):
             ),
             wraplength=650,
             justify="left",
-            font=("Arial",26,'bold')
+            font=("Arial",20,'bold')
         )
 
         resposta_usuario.pack(
@@ -161,7 +149,7 @@ class ResultadoView(ctk.CTkToplevel):
             ),
             wraplength=650,
             justify="left",
-            font=("Arial",26,'bold')
+            font=("Arial",20,'bold')
         )
 
         resposta_correta.pack(
@@ -178,7 +166,7 @@ class ResultadoView(ctk.CTkToplevel):
             ),
             wraplength=650,
             justify="left",
-            font=("Arial",26,'bold')
+            font=("Arial",20,'bold')
         )
 
         explicacao.pack(

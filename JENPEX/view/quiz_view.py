@@ -6,18 +6,10 @@ from view.resultado_view import ResultadoView
 
 
 class QuizView(ctk.CTkFrame):
-    def __init__(
-        self,
-        master,
-        quiz_service: QuizService
-    ):
+    def __init__(self, master, quiz_service: QuizService):
         super().__init__(master)
-
         self.quiz_service = quiz_service
-
-        self.resposta_selecionada = ctk.StringVar(
-            value=""
-        )
+        self.resposta_selecionada = ctk.StringVar(value="")
 
         self.criar_interface()
         self.exibir_pergunta()
@@ -27,7 +19,8 @@ class QuizView(ctk.CTkFrame):
         self.titulo = ctk.CTkLabel(
             self,
             text="QUIZ",
-            font=("Arial", 35, "bold")
+            font=("Arial", 40, "bold"),
+            text_color="#FFE600"
         )
 
         self.titulo.grid(
@@ -40,11 +33,11 @@ class QuizView(ctk.CTkFrame):
         self.numero = ctk.CTkLabel(
             self,
             text="",
-            font=("Arial",15)
+            font=("Arial",17)
         )
 
         self.numero.grid(
-            row=1,
+            row=15,
             column=0,
             padx=30,
             pady=10
@@ -53,9 +46,9 @@ class QuizView(ctk.CTkFrame):
         self.pergunta_label = ctk.CTkLabel(
             self,
             text="",
-            font=("Arial", 20, "bold"),
+            font=("Arial", 25, "bold"),
             wraplength=700,
-            anchor='w'
+            anchor='center'
         )
 
         self.pergunta_label.grid(
@@ -128,7 +121,7 @@ class QuizView(ctk.CTkFrame):
             )
 
             radio.pack(
-                anchor="w",
+                anchor="center",
                 padx=20,
                 pady=8
             )
@@ -143,9 +136,7 @@ class QuizView(ctk.CTkFrame):
             )
 
     def processar_resposta(self):
-
         resposta = self.resposta_selecionada.get()
-
         if not resposta:
             messagebox.showwarning(
                 "Atenção",
@@ -153,9 +144,7 @@ class QuizView(ctk.CTkFrame):
             )
             return
 
-        self.quiz_service.registrar_resposta(
-            resposta
-        )
+        self.quiz_service.registrar_resposta(resposta)
 
         if self.quiz_service.finalizado:
             self.finalizar_quiz()
@@ -164,11 +153,7 @@ class QuizView(ctk.CTkFrame):
             self.exibir_pergunta()
 
     def finalizar_quiz(self):
-
-        resultado = (
-            self.quiz_service.calcular_resultado()
-        )
-
+        resultado = (self.quiz_service.calcular_resultado())
         ResultadoView(
             self.master,
             resultado
