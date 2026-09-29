@@ -1,50 +1,182 @@
 [
     {
         "id": 1,
-        "pergunta": "Qual é a capital do Brasil?",
+        "pergunta": "Em Python, utilizamos diversas funções para realizar tarefas. Qual é a principal função do comando print()?",
         "opcoes": [
-            "São Paulo",
-            "Brasília",
-            "Rio de Janeiro",
-            "Salvador"
+            "Receber informações digitadas pelo usuário.",
+            "Criar uma variável automaticamente.",
+            "Exibir informações na tela.",
+            "Encerrar o programa."
         ],
-        "resposta": "Brasília",
-        "explicacao": "Brasília é a capital federal do Brasil desde 1960."
+        "resposta": "Exibir informações na tela.",
+        "explicacao": "A função print() é utilizada para exibir textos, valores e outras informações na tela."
     },
     {
         "id": 2,
-        "pergunta": "Qual linguagem é utilizada pelo Django?",
+        "pergunta": "Durante a programação, precisamos armazenar informações, como nomes, idades e valores. O que é uma variável em Python?",
         "opcoes": [
-            "Java",
-            "Python",
-            "C++",
-            "PHP"
+            "Um comando utilizado para apagar o programa.",
+            "Um espaço utilizado para armazenar um valor ou informação que pode ser utilizada pelo programa.",
+            "Uma função que serve somente para realizar cálculos matemáticos.",
+            "Um erro que acontece quando o programa não consegue executar um comando."
         ],
-        "resposta": "Python",
-        "explicacao": "Django é um framework web escrito em Python."
+        "resposta": "Um espaço utilizado para armazenar um valor ou informação que pode ser utilizada pelo programa.",
+        "explicacao": "Uma variável é utilizada para armazenar valores ou informações que podem ser acessadas e utilizadas durante a execução do programa."
     },
     {
         "id": 3,
-        "pergunta": "Qual estrutura de dados armazena valores em pares chave e valor em Python?",
+        "pergunta": "Qual componente é considerado o cérebro do computador?",
         "opcoes": [
-            "Lista",
-            "Tupla",
-            "Dicionário",
-            "Conjunto"
+            "Memória RAM",
+            "Processador (CPU)",
+            "Disco Rígido (HD)",
+            "Placa-mãe"
         ],
-        "resposta": "Dicionário",
-        "explicacao": "O dicionário utiliza pares de chave e valor."
+        "resposta": "Processador (CPU)",
+        "explicacao": "O processador, ou CPU, é responsável por executar instruções e realizar os principais cálculos do computador."
     },
     {
-        "id":4,
+        "id": 4,
+        "pergunta": "Qual das seguintes opções representa um software de sistema?",
+        "opcoes": [
+            "Google Chrome",
+            "Microsoft Word",
+            "Windows 11",
+            "WhatsApp"
+        ],
+        "resposta": "Windows 11",
+        "explicacao": "O Windows 11 é um sistema operacional, portanto é classificado como software de sistema."
+    },
+    {
+        "id": 5,
+        "pergunta": "Qual dos seguintes dispositivos é classificado exclusivamente como um periférico de ENTRADA?",
+        "opcoes": [
+            "Monitor",
+            "Caixa de som",
+            "Teclado",
+            "Impressora"
+        ],
+        "resposta": "Teclado",
+        "explicacao": "O teclado é um periférico de entrada porque permite ao usuário enviar informações e comandos para o computador."
+    },
+    {
+        "id": 6,
+        "pergunta": "Em Python, diferentes tipos de dados são utilizados para representar diferentes tipos de informações. O que representam int, float e str, respectivamente?",
+        "opcoes": [
+            "Texto, número decimal e número inteiro.",
+            "Número inteiro, número decimal e texto.",
+            "Número decimal, texto e número inteiro.",
+            "Número inteiro, texto e número decimal."
+        ],
+        "resposta": "Número inteiro, número decimal e texto.",
+        "explicacao": "Em Python, int representa números inteiros, float representa números decimais e str representa textos."
+    },
+    {
+        "id": 7,
+        "pergunta": "Qual tipo de memória perde todas as informações salvas quando o computador é desligado?",
+        "opcoes": [
+            "Memória RAM",
+            "Disco Rígido (HD)",
+            "Memória Flash (Pendrive)",
+            "SSD"
+        ],
+        "resposta": "Memória RAM",
+        "explicacao": "A memória RAM é volátil, ou seja, perde os dados armazenados nela quando o computador é desligado."
+    },
+    {
+        "id": 8,
         "pergunta": "No Python, podemos realizar operações matemáticas utilizando operadores específicos. Qual alternativa apresenta corretamente os operadores utilizados para soma, subtração, multiplicação e divisão, respectivamente?",
         "opcoes": [
-            "+, -, *, /",  
-            "+, /, x, -", 
-            "=, -, *, //", 
-            "+, --, x, ÷"
+            "+, -, *, /",
+            "+, /, x, -",
+            "=, -, *, //",
+            "+, --, ×, ÷"
         ],
         "resposta": "+, -, *, /",
-        "explicacao":"No Python, os operadores matemáticos básicos são: + → soma, - → subtração, * → multiplicação, / → divisão" 
+        "explicacao": "No Python, os operadores matemáticos básicos são: + para soma, - para subtração, * para multiplicação e / para divisão."
+    },
+    {
+        "id": 9,
+        "pergunta": "Qual é o valor do número binário 1010 em decimal?",
+        "opcoes": [
+            "5",
+            "8",
+            "10",
+            "12"
+        ],
+        "resposta": "10",
+        "explicacao": "O número binário 1010 corresponde a 10 em decimal, pois representa 8 + 2."
+    },
+    {
+        "id": 10,
+        "pergunta": "Em Python, podemos utilizar operadores e funções matemáticas para realizar cálculos. Qual das alternativas apresenta uma forma correta de calcular a raiz quadrada de 25 em Python?",
+        "opcoes": [
+            "25 / 2",
+            "25 ** 2",
+            "25 ** (1/2)",
+            "25 % 2"
+        ],
+        "resposta": "25 ** (1/2)",
+        "explicacao": "Em Python, elevar um número a 1/2 é uma forma de calcular sua raiz quadrada. Portanto, 25 ** (1/2) calcula a raiz quadrada de 25."
+    },
+    {
+        "id": 11,
+        "pergunta": "Uma pessoa precisa escrever um trabalho e formatar o texto no computador. Qual programa é mais adequado para essa tarefa?",
+        "opcoes": [
+            "Microsoft Word",
+            "Google Chrome",
+            "Calculadora",
+            "Windows Explorer"
+        ],
+        "resposta": "Microsoft Word",
+        "explicacao": "O Microsoft Word é um editor de textos utilizado para criar e formatar documentos, trabalhos e outros textos."
+    },
+    {
+        "id": 12,
+        "pergunta": "Ao acessar um site na internet, qual programa normalmente é utilizado para abrir e visualizar essa página?",
+        "opcoes": [
+            "Navegador de internet",
+            "Antivírus",
+            "Calculadora",
+            "Editor de imagens"
+        ],
+        "resposta": "Navegador de internet",
+        "explicacao": "Navegadores, como Google Chrome, Microsoft Edge e Mozilla Firefox, permitem acessar e visualizar páginas da internet."
+    },
+    {
+        "id": 13,
+        "pergunta": "Uma pessoa recebeu um arquivo por e-mail e deseja guardar esse arquivo no computador para utilizá-lo depois. Qual ação deve realizar?",
+        "opcoes": [
+            "Excluir o arquivo",
+            "Baixar o arquivo",
+            "Desligar o computador",
+            "Formatar o computador"
+        ],
+        "resposta": "Baixar o arquivo",
+        "explicacao": "Baixar um arquivo significa transferi-lo da internet ou de outro local para o dispositivo, permitindo que ele seja armazenado e utilizado posteriormente."
+    },
+    {
+        "id": 14,
+        "pergunta": "Ao criar uma senha para uma conta na internet, qual das opções abaixo representa uma prática mais segura?",
+        "opcoes": [
+            "Usar apenas o próprio nome",
+            "Usar a data de nascimento",
+            "Usar uma combinação de letras, números e caracteres especiais",
+            "Usar a mesma senha em todas as contas"
+        ],
+        "resposta": "Usar uma combinação de letras, números e caracteres especiais",
+        "explicacao": "Senhas mais variadas e difíceis de adivinhar aumentam a segurança das contas. Também é recomendado não reutilizar a mesma senha em vários serviços."
+    },
+    {
+        "id": 15,
+        "pergunta": "Uma pessoa apagou acidentalmente um arquivo importante e percebeu o erro logo depois. Onde ela pode procurar primeiro para tentar recuperá-lo?",
+        "opcoes": [
+            "Lixeira",
+            "Calculadora",
+            "Painel de Controle",
+            "Navegador"
+        ],
+        "resposta": "Lixeira",
+        "explicacao": "No Windows, arquivos excluídos normalmente são enviados para a Lixeira, de onde podem ser restaurados enquanto ainda estiverem disponíveis nela."
     }
 ]
