@@ -121,62 +121,63 @@
     },
     {
         "id": 11,
-        "pergunta": "Uma pessoa precisa escrever um trabalho e formatar o texto no computador. Qual programa é mais adequado para essa tarefa?",
+        "pergunta": "Em Python, qual comando é utilizado para receber uma informação digitada pelo usuário?",
         "opcoes": [
-            "Microsoft Word",
-            "Google Chrome",
-            "Calculadora",
-            "Windows Explorer"
+            "print()",
+            "input()",
+            "read()",
+            "scan()"
         ],
-        "resposta": "Microsoft Word",
-        "explicacao": "O Microsoft Word é um editor de textos utilizado para criar e formatar documentos, trabalhos e outros textos."
+        "resposta": "input()",
+        "explicacao": "A função input() permite que o programa receba uma informação digitada pelo usuário."
     },
     {
         "id": 12,
-        "pergunta": "Ao acessar um site na internet, qual programa normalmente é utilizado para abrir e visualizar essa página?",
+        "pergunta": "Observe o código abaixo: idade = 17. Qual é o tipo de dado armazenado na variável idade?",
         "opcoes": [
-            "Navegador de internet",
-            "Antivírus",
-            "Calculadora",
-            "Editor de imagens"
+            "str",
+            "float",
+            "int",
+            "bool"
         ],
-        "resposta": "Navegador de internet",
-        "explicacao": "Navegadores, como Google Chrome, Microsoft Edge e Mozilla Firefox, permitem acessar e visualizar páginas da internet."
+        "resposta": "int",
+        "explicacao": "O valor 17 é um número inteiro, portanto pertence ao tipo int em Python."
     },
     {
         "id": 13,
-        "pergunta": "Uma pessoa recebeu um arquivo por e-mail e deseja guardar esse arquivo no computador para utilizá-lo depois. Qual ação deve realizar?",
+        "pergunta": "Em Python, qual operador é utilizado para verificar se dois valores são iguais?",
         "opcoes": [
-            "Excluir o arquivo",
-            "Baixar o arquivo",
-            "Desligar o computador",
-            "Formatar o computador"
+            "=",
+            "==",
+            "!=",
+            ">="
         ],
-        "resposta": "Baixar o arquivo",
-        "explicacao": "Baixar um arquivo significa transferi-lo da internet ou de outro local para o dispositivo, permitindo que ele seja armazenado e utilizado posteriormente."
+        "resposta": "==",
+        "explicacao": "O operador == é utilizado para comparar dois valores e verificar se eles são iguais. Já o operador = é utilizado para atribuição."
     },
     {
         "id": 14,
-        "pergunta": "Ao criar uma senha para uma conta na internet, qual das opções abaixo representa uma prática mais segura?",
+        "pergunta": "Considere o código: x = 10 e y = 5. Qual será o resultado de print(x + y)?",
         "opcoes": [
-            "Usar apenas o próprio nome",
-            "Usar a data de nascimento",
-            "Usar uma combinação de letras, números e caracteres especiais",
-            "Usar a mesma senha em todas as contas"
+            "5",
+            "10",
+            "15",
+            "50"
         ],
-        "resposta": "Usar uma combinação de letras, números e caracteres especiais",
-        "explicacao": "Senhas mais variadas e difíceis de adivinhar aumentam a segurança das contas. Também é recomendado não reutilizar a mesma senha em vários serviços."
+        "resposta": "15",
+        "explicacao": "O operador + realiza uma soma. Portanto, 10 + 5 resulta em 15."
     },
     {
         "id": 15,
-        "pergunta": "Uma pessoa apagou acidentalmente um arquivo importante e percebeu o erro logo depois. Onde ela pode procurar primeiro para tentar recuperá-lo?",
+        "pergunta": "Em Python, qual estrutura é utilizada para executar um bloco de código somente quando uma determinada condição é verdadeira?",
         "opcoes": [
-            "Lixeira",
-            "Calculadora",
-            "Painel de Controle",
-            "Navegador"
+            "for",
+            "while",
+            "if",
+            "print"
         ],
-        "resposta": "Lixeira",
-        "explicacao": "No Windows, arquivos excluídos normalmente são enviados para a Lixeira, de onde podem ser restaurados enquanto ainda estiverem disponíveis nela."
+        "resposta": "if",
+        "explicacao": "A estrutura if permite verificar uma condição e executar um bloco de código quando essa condição for verdadeira."
     }
+
 ]
